@@ -778,6 +778,12 @@ marquee {
   }
 }
 
+@media (max-width: 515px) {
+  .language-active {
+    left: 57px;
+  }
+}
+
 @media (max-width: 414px) {
   .header-logo {
     font-size: 20px;
@@ -863,6 +869,20 @@ marquee {
     position: absolute;
     top: -129px;
     left: -231px;
+  }
+  .language-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* width: 100%; */
+    height: 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

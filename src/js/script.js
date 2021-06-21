@@ -30,7 +30,7 @@ moveAll(textCircle);
 
 //text Circle
 new CircleType(document.querySelector('.text-circle-scroll'));
-// CircleType();
+
 //scroll tranform
 let textActiveScroll =  document.querySelector('.text-circle-scroll');
 window.addEventListener('scroll', function() {
@@ -49,32 +49,11 @@ function activeLan(){
 	menuWrap.classList.toggle('language-active')
 };
 
-// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-//     const target = e.target // находим элемент, на котором был клик
-//     if (!target.closest('.logo-link') && !target.closest('.logo-link')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-// 		menuWrap.classList.remove('language-active') // то закрываем окно навигации, удаляя активный класс
-//     }
-//   })
   window.addEventListener('click', e => { // при клике в любом месте окна браузера
     const target = e.target // находим элемент, на котором был клик
     if (!target.closest('.logo-link'))// если этот элемент или его родительские элементы не окно навигации и не кнопка
 		menuWrap.classList.remove('language-active') // то закрываем окно навигации, удаляя активный класс
     });
-  
-// window.addEventListener('click', e =>{
-// 	// const target = e.target 
-// 	console.log('target')
-// })
-
-// const menuLink = document.querySelectorAll('.language');
-
-// menuLink.forEach(n => {
-//     menuLanguage.addEventListener('click', () => {
-//         menuLink.forEach(el => {
-//             el.classList.toggle('language-active');
-//         });
-//     });
-// });
 
 
 
